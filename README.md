@@ -71,7 +71,7 @@ What the improvising agent wrote: a guessed tilt side (right instead of left), a
 
 ## How the worker runs
 
-1. **Read**: PDF text layer via `unpdf`; if there is no text layer, OCR the embedded page image with `tesseract.js`.
+1. **Read**: PDF text layer via `unpdf`. If there is no text layer (a scan), OCR the embedded page image with `tesseract.js` (45s timeout), falling back to a verbatim Claude vision transcription. On Vercel, tesseract.js doesn't run reliably in serverless functions, so production sets `OCR_ENGINE=vision`. The local eval uses tesseract. Either way, OCR text then goes through the same extraction, validation and evidence checks.
 2. **Extract**: Claude (`claude-opus-5-5`) with structured outputs fills the per-line schema, using the matching supplier doc. Supplier detection is deterministic.
 3. **Normalise + validate** (`src/lib/worker/validate.ts`): parse sizes, derive the product from the SKU, evidence-check every value against the line's text, and validate against the catalog. Invalid values are kept off the order and shown in review as "invoice said".
 4. **Fingerprint**: an identical re-send is a no-op. The same invoice number with different lines updates the existing order.
