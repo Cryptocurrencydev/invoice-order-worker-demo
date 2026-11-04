@@ -4,22 +4,40 @@ import { PDFDocument, PDFName, PDFRawStream, type PDFDict } from "pdf-lib";
 
 export interface PdfText {
   text: string;
-  method: "text-layer" | "ocr";
+  method: "text-layer" | "ocr" | "vision-ocr";
   pages: number;
   ocrConfidence?: number;
 }
 
 const MIN_TEXT_CHARS = 80;
 
-export async function pdfToText(bytes: Uint8Array): Promise<PdfText> {
+/** Second OCR engine: transcribes page images (e.g. with a vision model). Used if tesseract fails or times out. */
+export type VisionOcr = (jpegs: Uint8Array[]) => Promise<string>;
+
+const OCR_TIMEOUT_MS = 45_000;
+
+function withTimeout<T>(p: Promise<T>, ms: number, what: string) {
+  return Promise.race([p, new Promise<never>((_, rej) => setTimeout(() => rej(new Error(`${what} timed out after ${ms / 1000}s`)), ms))]);
+}
+
+export async function pdfToText(bytes: Uint8Array, visionOcr?: VisionOcr): Promise<PdfText> {
   const { extractText, getDocumentProxy } = await import("unpdf");
   const doc = await getDocumentProxy(new Uint8Array(bytes));
   const { text, totalPages } = await extractText(doc, { mergePages: false });
   const pagesText = (text as string[]).map((t) => t.replace(/[ \t]+/g, " ").trim());
   const joined = pagesText.join("\n\n").trim();
   if (joined.replace(/\s/g, "").length >= MIN_TEXT_CHARS) return { text: joined, method: "text-layer", pages: totalPages };
-  const ocr = await ocrPdf(bytes);
-  return { text: ocr.text, method: "ocr", pages: totalPages, ocrConfidence: ocr.confidence };
+  try {
+    if (process.env.OCR_ENGINE === "vision") throw new Error("tesseract disabled");
+    const ocr = await withTimeout(ocrPdf(bytes), OCR_TIMEOUT_MS, "OCR");
+    if (ocr.text.replace(/\s/g, "").length >= MIN_TEXT_CHARS) return { text: ocr.text, method: "ocr", pages: totalPages, ocrConfidence: ocr.confidence };
+  } catch (e) {
+    if (!visionOcr) throw e;
+  }
+  if (!visionOcr) return { text: "", method: "ocr", pages: totalPages, ocrConfidence: 0 };
+  const images = await extractJpegs(bytes);
+  if (!images.length) return { text: "", method: "vision-ocr", pages: totalPages };
+  return { text: (await visionOcr(images)).trim(), method: "vision-ocr", pages: totalPages };
 }
 
 /** Pulls JPEG page images (DCTDecode XObjects) straight out of the PDF — that's what scanners produce. */

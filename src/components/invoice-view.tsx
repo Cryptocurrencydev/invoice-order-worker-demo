@@ -73,6 +73,7 @@ export function InvoiceView({ initial }: { initial: InvoiceState }) {
           })}
         </ol>
         {inv.text_method === "ocr" && <p className="text-sm text-muted">Scanned PDF: text recovered with OCR ({inv.ocr_confidence}% confidence).</p>}
+        {inv.text_method === "vision-ocr" && <p className="text-sm text-muted">Scanned PDF: page transcribed by the vision OCR fallback, then extracted and validated as usual.</p>}
         {inv.status === "duplicate" && inv.duplicate_of && (
           <p className="rounded-lg bg-[#ebe8e1] p-3 text-sm" data-testid="duplicate-banner">
             <b>Duplicate re-send.</b> Same supplier, invoice number and lines as{" "}

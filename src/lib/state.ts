@@ -48,6 +48,8 @@ export interface InvoiceState {
 
 export async function getInvoiceState(ws: string, id: string): Promise<InvoiceState | null> {
   if (!/^[0-9a-f-]{36}$/.test(id)) return null;
+  // a run that never finished (e.g. the function was stopped) is surfaced, not left spinning
+  await q("update invoices set status = 'error', stage = 'error', error = 'processing did not finish in time; please upload again' where id = $1 and status = 'processing' and updated_at < now() - interval '6 minutes'", [id]);
   const inv = await one<Record<string, unknown> & { id: string; supplier: string | null; order_id: string | null; duplicate_of: string | null; ws: string; invoice_no_norm: string | null }>(
     "select id, ws, file_name, status, stage, supplier, invoice_no, invoice_no_norm, sidemark, text_method, ocr_confidence, error, duplicate_of, order_id, timings, created_at from invoices where id = $1 and ws = $2",
     [id, ws],

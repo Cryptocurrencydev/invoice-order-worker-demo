@@ -9,7 +9,7 @@ export type Message = Anthropic.Beta.Messages.BetaMessage;
 
 export interface ModelClient {
   name: string;
-  create(params: Omit<CreateParams, "model">, purpose: "extract" | "act" | "interpret" | "baseline"): Promise<Message>;
+  create(params: Omit<CreateParams, "model">, purpose: "extract" | "act" | "interpret" | "baseline" | "ocr"): Promise<Message>;
 }
 
 export const MODEL_ID = process.env.ANTHROPIC_MODEL || "claude-opus-5-5";
@@ -171,4 +171,29 @@ export async function interpretAnswer(
   if (!text || text.type !== "text") return null;
   const v = (JSON.parse(text.text) as { value: string }).value;
   return v === "UNCLEAR" || !options.some((o) => o.value === v) ? null : v;
+}
+
+// ---------- OCR fallback (vision) ----------
+/** Verbatim transcription of scanned pages. Only transcribes; extraction + validation happen afterwards as usual. */
+export function visionOcr(model: ModelClient) {
+  return async (jpegs: Uint8Array[]) => {
+    const res = await model.create(
+      {
+        max_tokens: 8000,
+        system: "You are an OCR engine. Transcribe all text on the page exactly as printed, line by line, in reading order. Keep every number, fraction, code and abbreviation exactly as shown. Do not correct, interpret, summarise or add anything. Output only the transcription.",
+        output_config: { effort: "low" },
+        messages: [
+          {
+            role: "user",
+            content: [
+              ...jpegs.map((j) => ({ type: "image" as const, source: { type: "base64" as const, media_type: "image/jpeg" as const, data: Buffer.from(j).toString("base64") } })),
+              { type: "text" as const, text: "Transcribe this scanned supplier invoice." },
+            ],
+          },
+        ],
+      },
+      "ocr",
+    );
+    return res.content.filter((b) => b.type === "text").map((b) => (b as { text: string }).text).join("\n");
+  };
 }

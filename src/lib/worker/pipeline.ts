@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { one, q } from "../db";
 import { detectSupplier, supplierByCode, SUPPLIERS, type Supplier } from "../catalog";
-import { extractInvoice, interpretAnswer, type Message, type ModelClient } from "./model";
+import { extractInvoice, interpretAnswer, visionOcr, type Message, type ModelClient } from "./model";
 import { pdfToText } from "./pdf-text";
 import { invoiceFingerprint, lineKey, linesHash, normInvoiceNo } from "./fingerprint";
 import { normalizeLine } from "./validate";
@@ -64,10 +64,10 @@ export async function processInvoice(invoiceId: string, deps: WorkerDeps) {
   try {
     // 1. PDF → text (OCR fallback for scans)
     await setStage(inv.id, "reading");
-    const pdfText = await timed(timings, "read_ms", () => pdfToText(new Uint8Array(inv.pdf)));
+    const pdfText = await timed(timings, "read_ms", () => pdfToText(new Uint8Array(inv.pdf), visionOcr(deps.model)));
     if (pdfText.text.replace(/\s/g, "").length < 40) throw new Error("no readable text in the PDF (even after OCR)");
     await setStage(inv.id, "extracting", { raw_text: pdfText.text, text_method: pdfText.method, ocr_confidence: pdfText.ocrConfidence ?? null });
-    await event(ctxBase, null, "read", pdfText.method === "ocr" ? `Scanned PDF: text recovered with OCR (confidence ${pdfText.ocrConfidence}%).` : "Read the PDF text layer.");
+    await event(ctxBase, null, "read", pdfText.method === "ocr" ? `Scanned PDF: text recovered with OCR (confidence ${pdfText.ocrConfidence}%).` : pdfText.method === "vision-ocr" ? "Scanned PDF: OCR engine unavailable, page transcribed verbatim by the vision model (then extracted and validated as usual)." : "Read the PDF text layer.");
 
     // 2. supplier (deterministic) → model extraction with that supplier's product reference
     const supplier = detectSupplier(pdfText.text);

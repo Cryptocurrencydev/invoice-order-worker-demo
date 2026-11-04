@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   serverExternalPackages: ["tesseract.js", "unpdf", "pdf-lib"],
   // supplier product docs are read at runtime by the worker
-  outputFileTracingIncludes: { "/api/**": ["./data/suppliers/**", "./data/ground-truth/**"] },
+  outputFileTracingIncludes: { "/api/**": ["./data/suppliers/**", "./data/ground-truth/**", "./node_modules/tesseract.js/**", "./node_modules/tesseract.js-core/**"] },
   turbopack: {
     rules: {
       "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" },
