@@ -1,0 +1,146 @@
+{
+  "file": "INV-17.pdf",
+  "invoice_number": "BWB/8919",
+  "supplier": "BWB",
+  "sidemark": "HADDAD / J-2217",
+  "customer_job": "J-2217",
+  "layout": "BWB-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Nursery",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 34.75,
+        "height": 53.75,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Nursery",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 34.75,
+        "height": 53.75,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Bedroom 3",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 66.125,
+        "height": 34.25,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      },
+      "printed": {
+        "room": "Bedroom 3",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 66.125,
+        "height": 34.25,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Office",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 66.875,
+        "height": 79.375,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      },
+      "printed": {
+        "room": "Office",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 66.875,
+        "height": 79.375,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Primary Bedroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 34.75,
+        "height": 80,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bedroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 34.75,
+        "height": 80,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

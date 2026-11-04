@@ -1,0 +1,113 @@
+{
+  "file": "INV-20.pdf",
+  "invoice_number": "BWB/8940",
+  "supplier": "BWB",
+  "sidemark": "ACHTERBERG / J-2220",
+  "customer_job": "J-2220",
+  "layout": "BWB-A",
+  "scanned": true,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 34.75,
+        "height": 51.75,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 34.75,
+        "height": 51.75,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Den",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 34.125,
+        "height": 34.5,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": "crown_valance",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 34.125,
+        "height": 34.5,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": "crown_valance",
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Sunroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 37,
+        "height": 59.875,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Sunroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 37,
+        "height": 59.875,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

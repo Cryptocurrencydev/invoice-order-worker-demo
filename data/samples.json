@@ -1,0 +1,227 @@
+[
+  {
+    "id": "INV-01",
+    "file": "INV-01.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24103",
+    "scanned": false,
+    "layout": "NFS-A",
+    "note": "clean"
+  },
+  {
+    "id": "INV-02",
+    "file": "INV-02.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8814",
+    "scanned": false,
+    "layout": "BWB-A",
+    "note": "line 2: missing control_side"
+  },
+  {
+    "id": "INV-03",
+    "file": "INV-03.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30533",
+    "scanned": false,
+    "layout": "LWF-A",
+    "note": "line 3: missing mount"
+  },
+  {
+    "id": "INV-04",
+    "file": "INV-04.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24112",
+    "scanned": false,
+    "layout": "NFS-A",
+    "note": "line 1: invalid lift"
+  },
+  {
+    "id": "INV-05",
+    "file": "INV-05.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8835",
+    "scanned": false,
+    "layout": "BWB-A",
+    "note": "line 3: invalid colour_code"
+  },
+  {
+    "id": "INV-06",
+    "file": "INV-06.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30566",
+    "scanned": false,
+    "layout": "LWF-A",
+    "note": "line 1: missing remote_code"
+  },
+  {
+    "id": "INV-07",
+    "file": "INV-07.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24121",
+    "scanned": false,
+    "layout": "NFS-A",
+    "note": "line 4: missing room"
+  },
+  {
+    "id": "INV-08",
+    "file": "INV-08.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8856",
+    "scanned": false,
+    "layout": "BWB-A",
+    "note": "line 2: invalid width"
+  },
+  {
+    "id": "INV-09",
+    "file": "INV-09.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30599",
+    "scanned": false,
+    "layout": "LWF-B",
+    "note": "clean"
+  },
+  {
+    "id": "INV-10",
+    "file": "INV-10.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24130",
+    "scanned": false,
+    "layout": "NFS-A",
+    "note": "line 2: invalid remote_code"
+  },
+  {
+    "id": "INV-11",
+    "file": "INV-11.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8877",
+    "scanned": false,
+    "layout": "BWB-B",
+    "note": "line 1: missing colour_code"
+  },
+  {
+    "id": "INV-12",
+    "file": "INV-12.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30632",
+    "scanned": true,
+    "layout": "LWF-A",
+    "note": "scanned · clean"
+  },
+  {
+    "id": "INV-13",
+    "file": "INV-13.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24139",
+    "scanned": false,
+    "layout": "NFS-B",
+    "note": "line 3: invalid mount"
+  },
+  {
+    "id": "INV-14",
+    "file": "INV-14.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8898",
+    "scanned": false,
+    "layout": "BWB-B",
+    "note": "clean"
+  },
+  {
+    "id": "INV-15",
+    "file": "INV-15.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30665",
+    "scanned": false,
+    "layout": "LWF-B",
+    "note": "line 2: missing fabric_code; line 2: ambiguous colour_code"
+  },
+  {
+    "id": "INV-16",
+    "file": "INV-16.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24148",
+    "scanned": false,
+    "layout": "NFS-B",
+    "note": "line 1: missing motor_code"
+  },
+  {
+    "id": "INV-17",
+    "file": "INV-17.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8919",
+    "scanned": false,
+    "layout": "BWB-A",
+    "note": "clean"
+  },
+  {
+    "id": "INV-18",
+    "file": "INV-18.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30698",
+    "scanned": false,
+    "layout": "LWF-A",
+    "note": "line 4: missing control_side"
+  },
+  {
+    "id": "INV-19",
+    "file": "INV-19.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24157",
+    "scanned": false,
+    "layout": "NFS-A",
+    "note": "line 2: missing fabric_code; line 2: ambiguous colour_code"
+  },
+  {
+    "id": "INV-20",
+    "file": "INV-20.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8940",
+    "scanned": true,
+    "layout": "BWB-A",
+    "note": "scanned · clean"
+  },
+  {
+    "id": "INV-21",
+    "file": "INV-21.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30731",
+    "scanned": false,
+    "layout": "LWF-B",
+    "note": "clean"
+  },
+  {
+    "id": "INV-22",
+    "file": "INV-22.pdf",
+    "supplier": "Northfold Shade Co.",
+    "invoice_number": "NF-24166",
+    "scanned": false,
+    "layout": "NFS-B",
+    "note": "clean"
+  },
+  {
+    "id": "INV-23",
+    "file": "INV-23.pdf",
+    "supplier": "Bramblewood Blind & Shutter",
+    "invoice_number": "BWB/8961",
+    "scanned": false,
+    "layout": "BWB-B",
+    "note": "line 2: missing height"
+  },
+  {
+    "id": "INV-24",
+    "file": "INV-24.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30764",
+    "scanned": false,
+    "layout": "LWF-A",
+    "note": "clean"
+  },
+  {
+    "id": "INV-25",
+    "file": "INV-25.pdf",
+    "supplier": "Lumaris Window Fashions",
+    "invoice_number": "LWF-INV-30599",
+    "scanned": false,
+    "layout": "LWF-B",
+    "note": "re-sent copy of INV-09"
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "file": "INV-15.pdf",
+  "invoice_number": "LWF-INV-30665",
+  "supplier": "LWF",
+  "sidemark": "VOLKOVA / J-2215",
+  "customer_job": "J-2215",
+  "layout": "LWF-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Family Room",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 39.5,
+        "height": 55.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Family Room",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 39.5,
+        "height": 55.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 50.875,
+        "height": 43,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 50.875,
+        "height": 43,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": null,
+        "colour_code": null,
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Guest Room",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 77,
+        "height": 47.625,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "NIM",
+        "colour_code": "N-100",
+        "valance": null,
+        "motor_code": "LM-Q",
+        "remote_code": "LR-15"
+      },
+      "printed": {
+        "room": "Guest Room",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 77,
+        "height": 47.625,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "NIM",
+        "colour_code": "N-100",
+        "valance": null,
+        "motor_code": "LM-Q",
+        "remote_code": "LR-15"
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "fabric_code",
+      "kind": "missing"
+    },
+    {
+      "line_no": 2,
+      "field": "colour_code",
+      "kind": "ambiguous"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "fabric_code",
+      "answer": "the blackout one"
+    },
+    {
+      "line_no": 2,
+      "field": "colour_code",
+      "answer": "white"
+    }
+  ]
+}

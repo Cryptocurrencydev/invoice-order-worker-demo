@@ -1,0 +1,125 @@
+{
+  "file": "INV-06.pdf",
+  "invoice_number": "LWF-INV-30566",
+  "supplier": "LWF",
+  "sidemark": "OSEI / J-2206",
+  "customer_job": "J-2206",
+  "layout": "LWF-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 37.875,
+        "height": 65.875,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "AUR-SH",
+        "colour_code": "5-BRZ",
+        "valance": "fascia",
+        "motor_code": "LM-Q",
+        "remote_code": "LR-1"
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 37.875,
+        "height": 65.875,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "AUR-SH",
+        "colour_code": "5-BRZ",
+        "valance": "fascia",
+        "motor_code": "LM-Q",
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Family Room",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 32,
+        "height": 56.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-ALB",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Family Room",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 32,
+        "height": 56.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-ALB",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Kitchen",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 39.75,
+        "height": 89.875,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Kitchen",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 39.75,
+        "height": 89.875,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 1,
+      "field": "remote_code",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 1,
+      "field": "remote_code",
+      "answer": "LR-1"
+    }
+  ]
+}

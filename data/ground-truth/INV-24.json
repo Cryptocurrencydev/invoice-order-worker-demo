@@ -1,0 +1,113 @@
+{
+  "file": "INV-24.pdf",
+  "invoice_number": "LWF-INV-30764",
+  "supplier": "LWF",
+  "sidemark": "BENEDETTI / J-2208",
+  "customer_job": "J-2208",
+  "layout": "LWF-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 74.125,
+        "height": 39,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 74.125,
+        "height": 39,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 37.625,
+        "height": 69.875,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "AUR-SH",
+        "colour_code": "5-WHT",
+        "valance": "cassette",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 37.625,
+        "height": 69.875,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "AUR-SH",
+        "colour_code": "5-WHT",
+        "valance": "cassette",
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Sunroom",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 42.875,
+        "height": 63,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-BLK",
+        "valance": "fascia",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Sunroom",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 42.875,
+        "height": 63,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-BLK",
+        "valance": "fascia",
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

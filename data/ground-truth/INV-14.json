@@ -1,0 +1,179 @@
+{
+  "file": "INV-14.pdf",
+  "invoice_number": "BWB/8898",
+  "supplier": "BWB",
+  "sidemark": "MENSAH / J-2214",
+  "customer_job": "J-2214",
+  "layout": "BWB-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Office",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 20.875,
+        "height": 35.625,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Office",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 20.875,
+        "height": 35.625,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Bedroom 2",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 68.5,
+        "height": 37.5,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-6"
+      },
+      "printed": {
+        "room": "Bedroom 2",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 68.5,
+        "height": 37.5,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-6"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Primary Bath",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 46.125,
+        "height": 65.375,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bath",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 46.125,
+        "height": 65.375,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 34.875,
+        "height": 34.875,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 34.875,
+        "height": 34.875,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 5,
+      "final": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 52.25,
+        "height": 73.125,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 52.25,
+        "height": 73.125,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

@@ -1,0 +1,125 @@
+{
+  "file": "INV-23.pdf",
+  "invoice_number": "BWB/8961",
+  "supplier": "BWB",
+  "sidemark": "OKAFOR / J-2201",
+  "customer_job": "J-2201",
+  "layout": "BWB-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Office",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 59.875,
+        "height": 83.75,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "101",
+        "valance": "crown_valance",
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      },
+      "printed": {
+        "room": "Office",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 59.875,
+        "height": 83.75,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "101",
+        "valance": "crown_valance",
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Sunroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 30.625,
+        "height": 41.125,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Sunroom",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 30.625,
+        "height": null,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Den",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 28.5,
+        "height": 61.5,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 28.5,
+        "height": 61.5,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "height",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "height",
+      "answer": "41 1/8 tall"
+    }
+  ]
+}

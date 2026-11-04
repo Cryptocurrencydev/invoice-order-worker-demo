@@ -1,0 +1,936 @@
+{
+  "summary": {
+    "run_at": "2026-11-04T18:59:16.594Z",
+    "model": "claude-opus-5-5",
+    "invoices": 25,
+    "unique_invoices": 24,
+    "lines": 80,
+    "extraction_field_accuracy": 99.6,
+    "extraction_fields": {
+      "ok": 1036,
+      "total": 1040
+    },
+    "final_order_field_accuracy": 100,
+    "final_fields": {
+      "ok": 1040,
+      "total": 1040
+    },
+    "field_accuracy_by_field": {
+      "room": 100,
+      "product_type": 98.8,
+      "sku": 98.8,
+      "width": 98.8,
+      "height": 100,
+      "mount": 100,
+      "lift": 100,
+      "control_side": 100,
+      "fabric_code": 100,
+      "colour_code": 100,
+      "valance": 98.8,
+      "motor_code": 100,
+      "remote_code": 100
+    },
+    "orders_needing_questions": 17,
+    "orders_needing_questions_expected": 15,
+    "questions_asked": 20,
+    "questions_expected": 17,
+    "unplanned_questions": 3,
+    "repeated_questions": 0,
+    "issues_expected": 17,
+    "issues_caught": 17,
+    "invalid_options_expected": 5,
+    "invalid_options_caught": 5,
+    "false_flags": 3,
+    "duplicates_sent": 1,
+    "duplicates_prevented": 1,
+    "orders_created": 24,
+    "orders_handed_to_review": 24,
+    "writes": 135,
+    "readback_checks": 135,
+    "readback_mismatches": 0,
+    "false_writes": 0,
+    "invalid_writes": 0,
+    "scanned_invoices": 2,
+    "ocr_used": 2,
+    "errors": [],
+    "timing": {
+      "first_pass_wall_s": 138.2,
+      "concurrency": 4,
+      "avg_invoice_s": 28,
+      "avg_extract_s": 8.2,
+      "avg_act_s": 12.6
+    },
+    "model_usage": {
+      "extract": {
+        "calls": 25,
+        "input": 109061,
+        "output": 22915
+      },
+      "act": {
+        "calls": 171,
+        "input": 416886,
+        "output": 28401
+      },
+      "interpret": {
+        "calls": 2,
+        "input": 1003,
+        "output": 30
+      }
+    },
+    "est_cost_usd": 3.13
+  },
+  "invoices": [
+    {
+      "id": "INV-01",
+      "file": "INV-01.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 21503,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12840,
+        "read_ms": 69,
+        "extract_ms": 8529
+      }
+    },
+    {
+      "id": "INV-02",
+      "file": "INV-02.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 34646,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L2 missing control_side"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12439,
+        "read_ms": 46,
+        "extract_ms": 8773,
+        "finalize_ms": 13260
+      }
+    },
+    {
+      "id": "INV-03",
+      "file": "INV-03.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 33837,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L3 missing mount"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 13697,
+        "read_ms": 26,
+        "extract_ms": 8992,
+        "finalize_ms": 10930
+      }
+    },
+    {
+      "id": "INV-04",
+      "file": "INV-04.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 27091,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L1 invalid lift"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 8875,
+        "read_ms": 26,
+        "extract_ms": 7202,
+        "finalize_ms": 10845
+      }
+    },
+    {
+      "id": "INV-05",
+      "file": "INV-05.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 37917,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L3 invalid colour_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 18341,
+        "read_ms": 24,
+        "extract_ms": 8410,
+        "finalize_ms": 11086
+      }
+    },
+    {
+      "id": "INV-06",
+      "file": "INV-06.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 30468,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L1 missing remote_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 10966,
+        "read_ms": 6,
+        "extract_ms": 8984,
+        "finalize_ms": 10469
+      }
+    },
+    {
+      "id": "INV-07",
+      "file": "INV-07.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 29702,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L4 missing room"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 11369,
+        "read_ms": 9,
+        "extract_ms": 8847,
+        "finalize_ms": 9369
+      }
+    },
+    {
+      "id": "INV-08",
+      "file": "INV-08.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 28153,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L2 invalid width"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 10126,
+        "read_ms": 17,
+        "extract_ms": 7385,
+        "finalize_ms": 10578
+      }
+    },
+    {
+      "id": "INV-09",
+      "file": "INV-09.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 20753,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 14046,
+        "read_ms": 15,
+        "extract_ms": 6667
+      }
+    },
+    {
+      "id": "INV-10",
+      "file": "INV-10.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 28063,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L2 invalid remote_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 10184,
+        "read_ms": 14,
+        "extract_ms": 7406,
+        "finalize_ms": 10420
+      }
+    },
+    {
+      "id": "INV-11",
+      "file": "INV-11.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 30740,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L1 missing colour_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12042,
+        "read_ms": 9,
+        "extract_ms": 8812,
+        "finalize_ms": 9795
+      }
+    },
+    {
+      "id": "INV-12",
+      "file": "INV-12.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-A",
+      "scanned": true,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "ocr",
+      "ms": 30918,
+      "questions": 1,
+      "unplanned_questions": [
+        "line 1 width"
+      ],
+      "extraction": {
+        "ok": 38,
+        "total": 39,
+        "misses": [
+          "L1 width: expected 45.875 got null"
+        ]
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [
+        "L1 unreadable width"
+      ],
+      "extra_flags": [
+        "L1 unreadable width"
+      ],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 9844,
+        "read_ms": 835,
+        "extract_ms": 9041,
+        "finalize_ms": 11154
+      }
+    },
+    {
+      "id": "INV-13",
+      "file": "INV-13.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 28490,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L3 invalid mount"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 9834,
+        "read_ms": 14,
+        "extract_ms": 6605,
+        "finalize_ms": 11991
+      }
+    },
+    {
+      "id": "INV-14",
+      "file": "INV-14.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 26131,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 65,
+        "total": 65,
+        "misses": []
+      },
+      "final": {
+        "ok": 65,
+        "total": 65,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 17614,
+        "read_ms": 13,
+        "extract_ms": 8434
+      }
+    },
+    {
+      "id": "INV-15",
+      "file": "INV-15.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 31661,
+      "questions": 2,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 2,
+      "raised_issues": [
+        "L2 ambiguous fabric_code",
+        "L2 ambiguous colour_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 11877,
+        "read_ms": 5,
+        "extract_ms": 8246,
+        "finalize_ms": 9267
+      }
+    },
+    {
+      "id": "INV-16",
+      "file": "INV-16.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 30836,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L1 ambiguous motor_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 11826,
+        "read_ms": 8,
+        "extract_ms": 6827,
+        "finalize_ms": 12130
+      }
+    },
+    {
+      "id": "INV-17",
+      "file": "INV-17.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 20834,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12962,
+        "read_ms": 21,
+        "extract_ms": 7825
+      }
+    },
+    {
+      "id": "INV-18",
+      "file": "INV-18.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 34359,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L4 missing control_side"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 11528,
+        "read_ms": 14,
+        "extract_ms": 8539,
+        "finalize_ms": 14188
+      }
+    },
+    {
+      "id": "INV-19",
+      "file": "INV-19.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 37865,
+      "questions": 2,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 2,
+      "raised_issues": [
+        "L2 ambiguous fabric_code",
+        "L2 ambiguous colour_code"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 13205,
+        "read_ms": 12,
+        "extract_ms": 13734,
+        "finalize_ms": 9223
+      }
+    },
+    {
+      "id": "INV-20",
+      "file": "INV-20.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-A",
+      "scanned": true,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "ocr",
+      "ms": 33876,
+      "questions": 2,
+      "unplanned_questions": [
+        "line 2 valance",
+        "line 3 sku"
+      ],
+      "extraction": {
+        "ok": 36,
+        "total": 39,
+        "misses": [
+          "L2 valance: expected \"crown_valance\" got null",
+          "L3 product_type: expected \"faux_wood_blind\" got null",
+          "L3 sku: expected \"BW-FW2\" got null"
+        ]
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [
+        "L2 unconfirmed valance",
+        "L3 ambiguous sku"
+      ],
+      "extra_flags": [
+        "L2 unconfirmed valance",
+        "L3 ambiguous sku"
+      ],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12778,
+        "read_ms": 918,
+        "extract_ms": 9530,
+        "finalize_ms": 10594
+      }
+    },
+    {
+      "id": "INV-21",
+      "file": "INV-21.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 19898,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 26,
+        "total": 26,
+        "misses": []
+      },
+      "final": {
+        "ok": 26,
+        "total": 26,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 14418,
+        "read_ms": 13,
+        "extract_ms": 5446
+      }
+    },
+    {
+      "id": "INV-22",
+      "file": "INV-22.pdf",
+      "supplier": "NFS",
+      "layout": "NFS-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 22486,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "final": {
+        "ok": 52,
+        "total": 52,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 14442,
+        "read_ms": 15,
+        "extract_ms": 7998
+      }
+    },
+    {
+      "id": "INV-23",
+      "file": "INV-23.pdf",
+      "supplier": "BWB",
+      "layout": "BWB-B",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 34085,
+      "questions": 1,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 1,
+      "raised_issues": [
+        "L2 missing height"
+      ],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 13685,
+        "read_ms": 11,
+        "extract_ms": 7843,
+        "finalize_ms": 12502
+      }
+    },
+    {
+      "id": "INV-24",
+      "file": "INV-24.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-A",
+      "scanned": false,
+      "duplicate_of": null,
+      "status": "in_review",
+      "text_method": "text-layer",
+      "ms": 19401,
+      "questions": 0,
+      "unplanned_questions": [],
+      "extraction": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "final": {
+        "ok": 39,
+        "total": 39,
+        "misses": []
+      },
+      "expected_issues": 0,
+      "raised_issues": [],
+      "extra_flags": [],
+      "false_writes": [],
+      "timings": {
+        "act_ms": 12742,
+        "read_ms": 18,
+        "extract_ms": 6612
+      }
+    },
+    {
+      "id": "INV-25",
+      "file": "INV-25.pdf",
+      "supplier": "LWF",
+      "layout": "LWF-B",
+      "scanned": false,
+      "duplicate_of": "INV-09",
+      "status": "duplicate",
+      "text_method": "text-layer",
+      "ms": 6792,
+      "questions": 0,
+      "unplanned_questions": [],
+      "duplicate_detected": true
+    }
+  ]
+}

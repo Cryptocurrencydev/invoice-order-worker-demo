@@ -1,0 +1,113 @@
+{
+  "file": "INV-09.pdf",
+  "invoice_number": "LWF-INV-30599",
+  "supplier": "LWF",
+  "sidemark": "QUINTERO / J-2209",
+  "customer_job": "J-2209",
+  "layout": "LWF-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 31.875,
+        "height": 71.625,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-09",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 31.875,
+        "height": 71.625,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-09",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Primary Bath",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 20.25,
+        "height": 91,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bath",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 20.25,
+        "height": 91,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 24.625,
+        "height": 38.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bedroom",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 24.625,
+        "height": 38.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

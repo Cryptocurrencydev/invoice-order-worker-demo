@@ -1,0 +1,125 @@
+{
+  "file": "INV-04.pdf",
+  "invoice_number": "NF-24112",
+  "supplier": "NFS",
+  "sidemark": "WHITLOCK / J-2204",
+  "customer_job": "J-2204",
+  "layout": "NFS-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Primary Bath",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 30.5,
+        "height": 69.75,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C32",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bath",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 30.5,
+        "height": 69.75,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C32",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 68.625,
+        "height": 88.125,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SOL-W",
+        "colour_code": "W12",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NH-HUB"
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 68.625,
+        "height": 88.125,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SOL-W",
+        "colour_code": "W12",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NH-HUB"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 68.875,
+        "height": 52.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": "fascia",
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 68.875,
+        "height": 52.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": "fascia",
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 1,
+      "field": "lift",
+      "kind": "invalid"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 1,
+      "field": "lift",
+      "answer": "Make it cordless"
+    }
+  ]
+}

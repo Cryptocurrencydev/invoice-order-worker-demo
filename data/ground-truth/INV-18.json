@@ -1,0 +1,158 @@
+{
+  "file": "INV-18.pdf",
+  "invoice_number": "LWF-INV-30698",
+  "supplier": "LWF",
+  "sidemark": "LINDQVIST / J-2218",
+  "customer_job": "J-2218",
+  "layout": "LWF-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Guest Room",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 68.875,
+        "height": 81.375,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-01",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Guest Room",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 68.875,
+        "height": 81.375,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-01",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Mudroom",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 77.875,
+        "height": 64.25,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-WHT",
+        "valance": null,
+        "motor_code": "LM-Q",
+        "remote_code": "LR-15"
+      },
+      "printed": {
+        "room": "Mudroom",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 77.875,
+        "height": 64.25,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-WHT",
+        "valance": null,
+        "motor_code": "LM-Q",
+        "remote_code": "LR-15"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Bedroom 2",
+        "product_type": "drapery",
+        "sku": "LUM-DRP-RP",
+        "width": 46.75,
+        "height": 76.75,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "TES",
+        "colour_code": "T-SAG",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 2",
+        "product_type": "drapery",
+        "sku": "LUM-DRP-RP",
+        "width": 46.75,
+        "height": 76.75,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "TES",
+        "colour_code": "T-SAG",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Laundry",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 48,
+        "height": 94.5,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "NIM",
+        "colour_code": "N-180",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 48,
+        "height": 94.5,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": null,
+        "fabric_code": "NIM",
+        "colour_code": "N-180",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 4,
+      "field": "control_side",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 4,
+      "field": "control_side",
+      "answer": "right side"
+    }
+  ]
+}

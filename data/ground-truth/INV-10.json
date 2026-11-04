@@ -1,0 +1,125 @@
+{
+  "file": "INV-10.pdf",
+  "invoice_number": "NF-24130",
+  "supplier": "NFS",
+  "sidemark": "PATEL / J-2210",
+  "customer_job": "J-2210",
+  "layout": "NFS-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 42.25,
+        "height": 46.125,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SOL-L",
+        "colour_code": "L01",
+        "valance": "cassette",
+        "motor_code": "NM-20",
+        "remote_code": "NR-5"
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 42.25,
+        "height": 46.125,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "SOL-L",
+        "colour_code": "L01",
+        "valance": "cassette",
+        "motor_code": "NM-20",
+        "remote_code": "NR-5"
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Sunroom",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 53.25,
+        "height": 55.625,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B21",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NR-5"
+      },
+      "printed": {
+        "room": "Sunroom",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 53.25,
+        "height": 55.625,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B21",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NR-1"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Bedroom 3",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 23.5,
+        "height": 70,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "HOL-BO",
+        "colour_code": "C42",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 3",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 23.5,
+        "height": 70,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "HOL-BO",
+        "colour_code": "C42",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "remote_code",
+      "kind": "invalid"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "remote_code",
+      "answer": "Use the 5-channel, NR-5"
+    }
+  ]
+}

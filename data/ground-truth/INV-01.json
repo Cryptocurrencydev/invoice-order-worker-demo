@@ -1,0 +1,146 @@
+{
+  "file": "INV-01.pdf",
+  "invoice_number": "NF-24103",
+  "supplier": "NFS",
+  "sidemark": "OKAFOR / J-2201",
+  "customer_job": "J-2201",
+  "layout": "NFS-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 26.875,
+        "height": 66,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 26.875,
+        "height": 66,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Bedroom 3",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 67.625,
+        "height": 69.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B21",
+        "valance": "fascia",
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      },
+      "printed": {
+        "room": "Bedroom 3",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 67.625,
+        "height": 69.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B21",
+        "valance": "fascia",
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Dining Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 56.375,
+        "height": 67,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "SOL-W",
+        "colour_code": "W14",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Dining Room",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-210",
+        "width": 56.375,
+        "height": 67,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "SOL-W",
+        "colour_code": "W14",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Family Room",
+        "product_type": "drapery",
+        "sku": "NF-DR-510",
+        "width": 43.25,
+        "height": 50.75,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "ARB",
+        "colour_code": "D51",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Family Room",
+        "product_type": "drapery",
+        "sku": "NF-DR-510",
+        "width": 43.25,
+        "height": 50.75,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "ARB",
+        "colour_code": "D51",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

@@ -1,0 +1,125 @@
+{
+  "file": "INV-02.pdf",
+  "invoice_number": "BWB/8814",
+  "supplier": "BWB",
+  "sidemark": "HERRERA / J-2202",
+  "customer_job": "J-2202",
+  "layout": "BWB-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Bedroom 2",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 35.5,
+        "height": 37.5,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": "crown_valance",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 2",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 35.5,
+        "height": 37.5,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "105",
+        "valance": "crown_valance",
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 67.625,
+        "height": 32,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "101",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 67.625,
+        "height": 32,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "SM",
+        "colour_code": "101",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Family Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 63.25,
+        "height": 62.875,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Family Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 63.25,
+        "height": 62.875,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "control_side",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "control_side",
+      "answer": "left hand tilt"
+    }
+  ]
+}

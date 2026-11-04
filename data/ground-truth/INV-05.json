@@ -1,0 +1,125 @@
+{
+  "file": "INV-05.pdf",
+  "invoice_number": "BWB/8835",
+  "supplier": "BWB",
+  "sidemark": "PATEL / J-2205",
+  "customer_job": "J-2205",
+  "layout": "BWB-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Mudroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 25.25,
+        "height": 87.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Mudroom",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 25.25,
+        "height": 87.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Kitchen",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 67,
+        "height": 36.75,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-6"
+      },
+      "printed": {
+        "room": "Kitchen",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 67,
+        "height": 36.75,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "EM",
+        "colour_code": "201",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-6"
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 29.125,
+        "height": 81.875,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "EM",
+        "colour_code": "203",
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW2",
+        "width": 29.125,
+        "height": 81.875,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "EM",
+        "colour_code": "105",
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 3,
+      "field": "colour_code",
+      "kind": "invalid"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 3,
+      "field": "colour_code",
+      "answer": "203 Driftwood"
+    }
+  ]
+}

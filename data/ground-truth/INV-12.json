@@ -1,0 +1,113 @@
+{
+  "file": "INV-12.pdf",
+  "invoice_number": "LWF-INV-30632",
+  "supplier": "LWF",
+  "sidemark": "TANABE / J-2212",
+  "customer_job": "J-2212",
+  "layout": "LWF-A",
+  "scanned": true,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 45.875,
+        "height": 80.25,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 45.875,
+        "height": 80.25,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Nursery",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 63.5,
+        "height": 86.875,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Nursery",
+        "product_type": "roller_shade",
+        "sku": "LUM-ROL-50",
+        "width": 63.5,
+        "height": 86.875,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "AUR-BO",
+        "colour_code": "K-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Living Room",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 56.625,
+        "height": 76.375,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "NIM",
+        "colour_code": "N-140",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "cellular_shade",
+        "sku": "LUM-CEL-34",
+        "width": 56.625,
+        "height": 76.375,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "right",
+        "fabric_code": "NIM",
+        "colour_code": "N-140",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [],
+  "answers": []
+}

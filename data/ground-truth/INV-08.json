@@ -1,0 +1,125 @@
+{
+  "file": "INV-08.pdf",
+  "invoice_number": "BWB/8856",
+  "supplier": "BWB",
+  "sidemark": "BENEDETTI / J-2208",
+  "customer_job": "J-2208",
+  "layout": "BWB-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Bedroom 2",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 25.875,
+        "height": 62.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 2",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 25.875,
+        "height": 62.875,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Bedroom 3",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 42.25,
+        "height": 45,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 3",
+        "product_type": "shutter",
+        "sku": "BW-SH35",
+        "width": 52.25,
+        "height": 45,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 60.75,
+        "height": 52.375,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 60.75,
+        "height": 52.375,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": null,
+        "motor_code": "BM-1",
+        "remote_code": "BR-1"
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "width",
+      "kind": "invalid"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "width",
+      "answer": "Typo on their end, it's 42 1/4"
+    }
+  ]
+}

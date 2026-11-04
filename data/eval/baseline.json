@@ -1,0 +1,284 @@
+{
+  "summary": {
+    "run_at": "2026-11-04T19:01:19.748Z",
+    "model": "claude-opus-5-5",
+    "approach": "single prompt, model fills every field with its best judgment, writes directly",
+    "final_order_field_accuracy": 99,
+    "final_fields": {
+      "ok": 1030,
+      "total": 1040
+    },
+    "false_writes": 9,
+    "invalid_lines_written": 4,
+    "questions_asked": 0,
+    "invoices_with_defects": 15,
+    "defect_invoices_fully_correct": 7,
+    "duplicate_protection": "none (no invoice fingerprint): a re-sent invoice creates a second order",
+    "wall_s": 53.6,
+    "model_usage": {
+      "calls": 24,
+      "input": 76599,
+      "output": 17052
+    }
+  },
+  "invoices": [
+    {
+      "id": "INV-01",
+      "ok": 52,
+      "total": 52,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 8733
+    },
+    {
+      "id": "INV-02",
+      "ok": 38,
+      "total": 39,
+      "false_writes": 1,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [
+        "L2 control_side: expected \"left\" got \"right\""
+      ],
+      "ms": 11293
+    },
+    {
+      "id": "INV-03",
+      "ok": 52,
+      "total": 52,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 11244
+    },
+    {
+      "id": "INV-04",
+      "ok": 38,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [
+        "L1 control_side: expected \"right\" got null"
+      ],
+      "ms": 9690
+    },
+    {
+      "id": "INV-05",
+      "ok": 37,
+      "total": 39,
+      "false_writes": 2,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [
+        "L3 fabric_code: expected \"EM\" got \"SM\"",
+        "L3 colour_code: expected \"203\" got \"105\""
+      ],
+      "ms": 7625
+    },
+    {
+      "id": "INV-06",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 9052
+    },
+    {
+      "id": "INV-07",
+      "ok": 51,
+      "total": 52,
+      "false_writes": 1,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [
+        "L4 room: expected \"Office\" got \"Not specified on invoice\""
+      ],
+      "ms": 8500
+    },
+    {
+      "id": "INV-08",
+      "ok": 38,
+      "total": 39,
+      "false_writes": 1,
+      "invalid_lines_written": 1,
+      "defects": 1,
+      "misses": [
+        "L2 width: expected 42.25 got 52.25"
+      ],
+      "ms": 6273
+    },
+    {
+      "id": "INV-09",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 4524
+    },
+    {
+      "id": "INV-10",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 8525
+    },
+    {
+      "id": "INV-11",
+      "ok": 51,
+      "total": 52,
+      "false_writes": 1,
+      "invalid_lines_written": 1,
+      "defects": 1,
+      "misses": [
+        "L1 colour_code: expected \"102\" got \"UNSPECIFIED\""
+      ],
+      "ms": 9692
+    },
+    {
+      "id": "INV-12",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 6937
+    },
+    {
+      "id": "INV-13",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 6671
+    },
+    {
+      "id": "INV-14",
+      "ok": 65,
+      "total": 65,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 12215
+    },
+    {
+      "id": "INV-15",
+      "ok": 37,
+      "total": 39,
+      "false_writes": 2,
+      "invalid_lines_written": 1,
+      "defects": 2,
+      "misses": [
+        "L2 fabric_code: expected \"AUR-BO\" got \"UNRESOLVED - invoice omits fabric; confirm AUR-SH (Sheer 5%) or AUR-BO (Blackout) before ordering\"",
+        "L2 colour_code: expected \"K-WHT\" got \"UNRESOLVED - White is 5-WHT (Sheer) or K-WHT (Blackout); confirm before ordering\""
+      ],
+      "ms": 9253
+    },
+    {
+      "id": "INV-16",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 9278
+    },
+    {
+      "id": "INV-17",
+      "ok": 52,
+      "total": 52,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 8606
+    },
+    {
+      "id": "INV-18",
+      "ok": 52,
+      "total": 52,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 1,
+      "misses": [],
+      "ms": 11857
+    },
+    {
+      "id": "INV-19",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 2,
+      "misses": [],
+      "ms": 11431
+    },
+    {
+      "id": "INV-20",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 6216
+    },
+    {
+      "id": "INV-21",
+      "ok": 26,
+      "total": 26,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 5285
+    },
+    {
+      "id": "INV-22",
+      "ok": 52,
+      "total": 52,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 7002
+    },
+    {
+      "id": "INV-23",
+      "ok": 38,
+      "total": 39,
+      "false_writes": 1,
+      "invalid_lines_written": 1,
+      "defects": 1,
+      "misses": [
+        "L2 height: expected 41.125 got 0"
+      ],
+      "ms": 9985
+    },
+    {
+      "id": "INV-24",
+      "ok": 39,
+      "total": 39,
+      "false_writes": 0,
+      "invalid_lines_written": 0,
+      "defects": 0,
+      "misses": [],
+      "ms": 5222
+    }
+  ]
+}

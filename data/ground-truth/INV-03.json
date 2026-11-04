@@ -1,0 +1,158 @@
+{
+  "file": "INV-03.pdf",
+  "invoice_number": "LWF-INV-30533",
+  "supplier": "LWF",
+  "sidemark": "CHAU / J-2203",
+  "customer_job": "J-2203",
+  "layout": "LWF-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Bedroom 3",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 21.875,
+        "height": 66.625,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Bedroom 3",
+        "product_type": "shutter",
+        "sku": "LUM-SHT-35",
+        "width": 21.875,
+        "height": 66.625,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PLY",
+        "colour_code": "S-WHT",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Primary Bath",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 32.5,
+        "height": 71.75,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-01",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bath",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 32.5,
+        "height": 71.75,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-01",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Den",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 44,
+        "height": 67.875,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 44,
+        "height": 67.875,
+        "mount": null,
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-04",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 49.5,
+        "height": 53.5,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-09",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "faux_wood_blind",
+        "sku": "LUM-FW-2",
+        "width": 49.5,
+        "height": 53.5,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "right",
+        "fabric_code": "CDL-SM",
+        "colour_code": "W-09",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 3,
+      "field": "mount",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 3,
+      "field": "mount",
+      "answer": "inside mount please"
+    }
+  ]
+}

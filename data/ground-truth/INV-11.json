@@ -1,0 +1,158 @@
+{
+  "file": "INV-11.pdf",
+  "invoice_number": "BWB/8877",
+  "supplier": "BWB",
+  "sidemark": "MARCHAND / J-2211",
+  "customer_job": "J-2211",
+  "layout": "BWB-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 67.625,
+        "height": 61.375,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": "102",
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Living Room",
+        "product_type": "faux_wood_blind",
+        "sku": "BW-FW25",
+        "width": 67.625,
+        "height": 61.375,
+        "mount": "outside",
+        "lift": "cordless",
+        "control_side": "left",
+        "fabric_code": "SM",
+        "colour_code": null,
+        "valance": "standard_valance",
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Den",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 37.75,
+        "height": 56.625,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Den",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 37.75,
+        "height": 56.625,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Office",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 46.375,
+        "height": 46.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Office",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 46.375,
+        "height": 46.25,
+        "mount": "outside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "301",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 4,
+      "final": {
+        "room": "Nursery",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 37.75,
+        "height": 87.5,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Nursery",
+        "product_type": "shutter",
+        "sku": "BW-SH45",
+        "width": 37.75,
+        "height": 87.5,
+        "mount": "inside",
+        "lift": null,
+        "control_side": null,
+        "fabric_code": "PV",
+        "colour_code": "302",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 1,
+      "field": "colour_code",
+      "kind": "missing"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 1,
+      "field": "colour_code",
+      "answer": "Linen White"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "file": "INV-19.pdf",
+  "invoice_number": "NF-24157",
+  "supplier": "NFS",
+  "sidemark": "LOPES / J-2219",
+  "customer_job": "J-2219",
+  "layout": "NFS-A",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Primary Bath",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 51.75,
+        "height": 66.5,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C31",
+        "valance": null,
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      },
+      "printed": {
+        "room": "Primary Bath",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 51.75,
+        "height": 66.5,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C31",
+        "valance": null,
+        "motor_code": "NM-20",
+        "remote_code": "NR-1"
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Primary Bedroom",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 72.25,
+        "height": 47.25,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "HOL-LF",
+        "colour_code": "C31",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Primary Bedroom",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 72.25,
+        "height": 47.25,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": null,
+        "colour_code": null,
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Dining Room",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 61.25,
+        "height": 33.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C32",
+        "valance": null,
+        "motor_code": "NM-20",
+        "remote_code": "NR-5"
+      },
+      "printed": {
+        "room": "Dining Room",
+        "product_type": "cellular_shade",
+        "sku": "NF-CS-310",
+        "width": 61.25,
+        "height": 33.875,
+        "mount": "inside",
+        "lift": "motorized",
+        "control_side": "left",
+        "fabric_code": "HOL-LF",
+        "colour_code": "C32",
+        "valance": null,
+        "motor_code": "NM-20",
+        "remote_code": "NR-5"
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 2,
+      "field": "fabric_code",
+      "kind": "missing"
+    },
+    {
+      "line_no": 2,
+      "field": "colour_code",
+      "kind": "ambiguous"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 2,
+      "field": "fabric_code",
+      "answer": "light filtering"
+    },
+    {
+      "line_no": 2,
+      "field": "colour_code",
+      "answer": "White Dove"
+    }
+  ]
+}

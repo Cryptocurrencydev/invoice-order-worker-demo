@@ -1,0 +1,125 @@
+{
+  "file": "INV-13.pdf",
+  "invoice_number": "NF-24139",
+  "supplier": "NFS",
+  "sidemark": "FITZGERALD / J-2213",
+  "customer_job": "J-2213",
+  "layout": "NFS-B",
+  "scanned": false,
+  "duplicate_of": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "final": {
+        "room": "Bedroom 2",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 41.5,
+        "height": 71.625,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NH-HUB"
+      },
+      "printed": {
+        "room": "Bedroom 2",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 41.5,
+        "height": 71.625,
+        "mount": "outside",
+        "lift": "motorized",
+        "control_side": "right",
+        "fabric_code": "MER-B",
+        "colour_code": "B22",
+        "valance": null,
+        "motor_code": "NM-35",
+        "remote_code": "NH-HUB"
+      }
+    },
+    {
+      "line_no": 2,
+      "final": {
+        "room": "Laundry",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 34.125,
+        "height": 73.375,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "MER-B",
+        "colour_code": "B23",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Laundry",
+        "product_type": "roller_shade",
+        "sku": "NF-RS-240",
+        "width": 34.125,
+        "height": 73.375,
+        "mount": "inside",
+        "lift": "cordless",
+        "control_side": null,
+        "fabric_code": "MER-B",
+        "colour_code": "B23",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    },
+    {
+      "line_no": 3,
+      "final": {
+        "room": "Guest Room",
+        "product_type": "drapery",
+        "sku": "NF-DR-510",
+        "width": 31.75,
+        "height": 50.875,
+        "mount": "outside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "ARB",
+        "colour_code": "D53",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      },
+      "printed": {
+        "room": "Guest Room",
+        "product_type": "drapery",
+        "sku": "NF-DR-510",
+        "width": 31.75,
+        "height": 50.875,
+        "mount": "inside",
+        "lift": "continuous_loop",
+        "control_side": "left",
+        "fabric_code": "ARB",
+        "colour_code": "D53",
+        "valance": null,
+        "motor_code": null,
+        "remote_code": null
+      }
+    }
+  ],
+  "expected_issues": [
+    {
+      "line_no": 3,
+      "field": "mount",
+      "kind": "invalid"
+    }
+  ],
+  "answers": [
+    {
+      "line_no": 3,
+      "field": "mount",
+      "answer": "outside mount, above the casing"
+    }
+  ]
+}
