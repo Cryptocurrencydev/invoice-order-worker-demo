@@ -13,4 +13,8 @@ All times WAT (UTC+1), 2026-11-04.
 | 6. UI (inbox/upload, invoice view + chat, order, office review diff, /eval) | 19:45 | 19:51 | 6m | screenshot pass at 390px + desktop, fixes for mobile order list and eval comparison |
 | 7. Playwright e2e (mock model, 390px + desktop, console-error guard) | 19:51 | 19:54 | 3m | 10/10 passing |
 | 8. Final eval (worker + "agent improvises" baseline), README, Vercel/Neon/GitHub setup | 19:53 | 20:02 | 9m | worker 100% final / 0 false writes; baseline 99.0% / 9 wrong values written. Baseline schema enum-constrained for a fair comparison |
-| 9. Deploy (push to main) + live verification | 20:02 | 20:22 | 20m | live INV-04 flow OK with real model; scanned PDF hung in tesseract on Vercel → added OCR timeout + Claude vision OCR fallback + stale-run sweep; ~10 min lost to this machine being unable to reach Vercel |
+| 9. Deploy (push to main) + live verification + OCR fix | 20:02 | 21:15 | 73m | live INV-04 flow OK with real model; scanned PDF hung in tesseract on Vercel → added OCR timeout + Claude vision OCR fallback + stale-run sweep; ~10 min lost to this machine being unable to reach Vercel |
+
+**Total: 19:14 → 21:15 (≈2h).** About 2h build and test; the live-verification phase includes roughly 35 min waiting on this machine's intermittent connection to Vercel.
+
+Live verification (real model, 2026-11-04): INV-04 upload → invalid lift flagged → salesperson answer → order → office review, at 390px and desktop, 0 console errors. Scanned INV-12 → vision OCR → in review (25s). INV-09 then re-sent INV-25 → duplicate, order untouched.

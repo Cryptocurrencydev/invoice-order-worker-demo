@@ -20,8 +20,8 @@ for (const [name, vp] of [["m", { width: 390, height: 844 }], ["d", { width: 128
   for (let i = 0; i < 4 && (await page.getByTestId("answer-input").count()); i++) {
     const chip = page.locator('[data-testid="chat"] form button[type="button"]').first();
     if (await chip.count()) await chip.click(); else { await page.getByTestId("answer-input").fill("left"); await page.getByRole("button", { name: "Send" }).click(); }
-    await page.waitForTimeout(1500);
-    await page.waitForFunction(() => !document.body.innerText.includes("Updating the order"), null, { timeout: 120000 });
+    await page.getByTestId("answer").nth(i).waitFor({ timeout: 180000 });
+    await page.waitForFunction(() => !document.body.innerText.includes("Updating the order"), null, { timeout: 180000 });
   }
   await page.locator('[data-status="in_review"]').first().waitFor({ timeout: 120000 });
   await page.screenshot({ path: `${out}/${name}-answered.png`, fullPage: true });
